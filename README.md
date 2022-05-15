@@ -13,7 +13,7 @@ make run
 ##### Via maven
 
 ```sh
-mvn install -f AsteroidsEntityFramework/pom.xml
-mvn package -f AsteroidsEntityFramework/Core/pom.xml
+mvn install -f Asteroids/pom.xml
+mvn package -f Asteroids/Core/pom.xml
 java -jar bin/JavaLab.jar
 ```

@@ -11,7 +11,7 @@
     </dependencies>
     <parent>
         <groupId>dk.sdu.mmmi.cbse</groupId>
-        <artifactId>AsteroidsEntityFramework</artifactId>
+        <artifactId>Asteroids</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <artifactId>Common</artifactId>

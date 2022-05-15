@@ -1,7 +1,7 @@
-COMPONENT=AsteroidsEntityFramework
+COMPONENT=Asteroids
 JAVA_FILES=$(shell find ${COMPOENT} -type f -name "*.java")
 POM_FILES=$(shell find ${COMPOENT} -type f -name "pom.xml")
-PACKAGE=bin/JavaLab.jar
+PACKAGE=bin/SpringLab.jar
 
 default all:run 
 
