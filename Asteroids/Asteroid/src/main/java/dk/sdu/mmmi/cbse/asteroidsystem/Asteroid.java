@@ -4,6 +4,7 @@ import dk.sdu.mmmi.cbse.common.IShapeRender;
 import dk.sdu.mmmi.cbse.common.ShapeType;
 import dk.sdu.mmmi.cbse.common.data.Entity;
 import dk.sdu.mmmi.cbse.common.data.EntityType;
+import dk.sdu.mmmi.cbse.common.data.entityparts.PositionPart;
 
 public class Asteroid extends Entity {
     public Asteroid() {
@@ -19,9 +20,7 @@ public class Asteroid extends Entity {
 
     @Override
     protected void drawMethod(IShapeRender sr) {
-        float x = this.getShapeX()[0];
-        float y = this.getShapeY()[0];
-        float radius = this.getRadius();
-        sr.addCircle(x, y, radius);
+        PositionPart pos = this.getPart(PositionPart.class);
+        sr.addCircle(pos.getX(), pos.getY(), this.getRadius());
     }
 }

@@ -16,7 +16,7 @@ public class Enemy extends Entity {
     }
 
     public void resetCooldown() {
-        this.cooldown = 0.5f;
+        this.cooldown = 0.2f;
     }
 
     @Override
